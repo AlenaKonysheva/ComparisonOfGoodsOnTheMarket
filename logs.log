@@ -1,0 +1,30 @@
+2021-03-23 10:32:41,347 INFO SampleTest [main] Set up test
+2021-03-23 10:32:41,366 INFO d.WebDriverFactory [main] Return chrome with options
+2021-03-23 10:32:43,341 INFO SampleTest [main] Start test
+2021-03-23 10:32:43,342 INFO SampleTest [main] Finish test
+2021-03-23 10:32:43,922 INFO SampleTest [main] Драйвер успешно закрыт
+2021-03-23 10:32:50,164 INFO SampleTest [main] Set up test
+2021-03-23 10:32:50,185 INFO d.WebDriverFactory [main] Return chrome with options
+2021-03-23 10:32:52,130 INFO SampleTest [main] Start test
+2021-03-23 10:32:52,131 INFO SampleTest [main] Finish test
+2021-03-23 10:32:52,735 INFO SampleTest [main] Драйвер успешно закрыт
+2021-03-23 10:38:41,133 INFO SampleTest [main] Set up test
+2021-03-23 10:38:41,157 INFO d.WebDriverFactory [main] Return chrome with options
+2021-03-23 10:38:43,423 INFO SampleTest [main] Start test
+2021-03-23 10:38:43,424 INFO SampleTest [main] Finish test
+2021-03-23 10:38:44,009 INFO SampleTest [main] Драйвер успешно закрыт
+2021-03-23 10:39:28,727 INFO SampleTest [main] Set up test
+2021-03-23 10:39:28,746 INFO d.WebDriverFactory [main] Return chrome with options
+2021-03-23 10:39:30,799 INFO SampleTest [main] Start test
+2021-03-23 10:39:30,800 INFO SampleTest [main] Finish test
+2021-03-23 10:39:31,389 INFO SampleTest [main] Драйвер успешно закрыт
+2021-03-23 11:04:13,810 INFO SampleTest [main] Set up test
+2021-03-23 11:04:13,834 INFO d.WebDriverFactory [main] Return chrome with options
+2021-03-23 11:04:15,837 INFO SampleTest [main] Start test
+2021-03-23 11:04:15,838 INFO SampleTest [main] Finish test
+2021-03-23 11:04:16,422 INFO SampleTest [main] Драйвер успешно закрыт
+2021-03-23 11:37:54,040 INFO SampleTest [main] Set up test
+2021-03-23 11:37:54,065 INFO d.WebDriverFactory [main] Return chrome with options
+2021-03-23 11:37:56,092 INFO SampleTest [main] Start test
+2021-03-23 11:37:56,093 INFO SampleTest [main] Finish test
+2021-03-23 11:37:56,682 INFO SampleTest [main] Драйвер успешно закрыт
