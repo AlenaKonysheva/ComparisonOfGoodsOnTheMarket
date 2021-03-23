@@ -28,3 +28,27 @@
 2021-03-23 11:37:56,092 INFO SampleTest [main] Start test
 2021-03-23 11:37:56,093 INFO SampleTest [main] Finish test
 2021-03-23 11:37:56,682 INFO SampleTest [main] Драйвер успешно закрыт
+2021-03-23 11:42:52,559 INFO SampleTest [main] Set up test
+2021-03-23 11:42:52,585 INFO d.WebDriverFactory [main] Return chrome with options
+2021-03-23 11:42:54,828 INFO SampleTest [main] Start test
+2021-03-23 11:42:54,829 INFO SampleTest [main] Finish test
+2021-03-23 11:42:55,423 INFO SampleTest [main] Драйвер успешно закрыт
+2021-03-23 11:42:59,801 INFO SampleTest [main] Set up test
+2021-03-23 11:42:59,824 INFO d.WebDriverFactory [main] Return chrome with options
+2021-03-23 11:43:01,802 INFO SampleTest [main] Start test
+2021-03-23 11:43:01,802 INFO SampleTest [main] Finish test
+2021-03-23 11:43:02,395 INFO SampleTest [main] Драйвер успешно закрыт
+2021-03-23 11:49:24,760 INFO SampleTest [main] Set up test
+2021-03-23 11:49:24,787 INFO d.WebDriverFactory [main] Return chrome with options
+2021-03-23 11:49:26,802 INFO SampleTest [main] Start test
+2021-03-23 11:49:26,803 INFO SampleTest [main] Finish test
+2021-03-23 11:49:27,406 INFO SampleTest [main] Драйвер успешно закрыт
+2021-03-23 11:51:16,819 INFO SampleTest [main] Set up test
+2021-03-23 11:51:16,843 INFO d.WebDriverFactory [main] Return chrome with options
+2021-03-23 11:51:18,784 INFO SampleTest [main] Start test
+2021-03-23 11:51:21,554 INFO SampleTest [main] Кликаем By.xpath: //span[contains(text(),"Электроника")]
+2021-03-23 11:51:24,242 INFO SampleTest [main] Кликаем By.xpath: //a[contains(text(),"Смартфоны")]
+2021-03-23 11:51:24,261 INFO SampleTest [main] Не удалось кликнуть по элементу
+2021-03-23 11:51:24,261 INFO SampleTest [main] Пробуем закрыть вспылвающее окно, закрывающее элемент
+2021-03-23 11:51:24,270 INFO SampleTest [main] Finish test
+2021-03-23 11:51:25,020 INFO SampleTest [main] Драйвер успешно закрыт
