@@ -7,11 +7,11 @@ import org.openqa.selenium.support.FindBy;
 public class OtusMainPage extends BasePage {
 	public OtusMainPage(WebDriver driver) {
 		super(driver);
-		url = cfg.urlOtus();//задаем url данной страницы
+		url = cfg.urlOtus();
 	}
 
 	/**
-	 * Вебэлементы
+	 * WebElements
 	 */
 	@FindBy(css = ".header2-menu__item-text__username")
 	private WebElement userNameLabel;

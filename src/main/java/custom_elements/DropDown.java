@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+
 /**
  * Класс для дропдаунов сайта отус
  * строится с помощью драйвера и локатора, по клику на который выпадет список
@@ -40,10 +42,10 @@ public class DropDown {
 	}
 
 	private void waitUntilElementToBeClickable(WebElement element) {
-		new WebDriverWait(driver, 5).until(ExpectedConditions.elementToBeClickable(element));
+		new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.elementToBeClickable(element));
 	}
 
 	private void waitUntilElementInvisibly(WebElement element) {
-		new WebDriverWait(driver, 5).until(ExpectedConditions.invisibilityOf(element));
+		new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.invisibilityOf(element));
 	}
 }

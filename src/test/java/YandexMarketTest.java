@@ -3,7 +3,7 @@ import org.junit.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class SampleTest extends BaseTest{
+public class YandexMarketTest extends BaseTest{
     private final By electronics = By.xpath("//span[contains(text(),\"Электроника\")]");
     private final By smartphones = By.xpath("//a[contains(text(),\"Смартфоны\")]");
     private final By samsung = By.xpath("//span[text() = \"Samsung\"]");
@@ -18,7 +18,7 @@ public class SampleTest extends BaseTest{
     private final By elementInList = By.xpath("//*[@class = \"LwwocgVx0q _2VGDFjE-Ev\"]");
 
     @Test
-    public void yandexMarketTest() {
+    public void comparisonOfTwoProductsTest() {
         logger.info("Start test");
         driver.get(cfg.urlYandex());
         clickToElement(electronics);
@@ -27,20 +27,20 @@ public class SampleTest extends BaseTest{
         clickToElement(samsung);
         clickToElement(xiaomi);
         clickToElement(sortByPrice);
-//		добавляем samsung в сравнение
+//		add samsung to comparison
         moveToElement(firstSamsung);
         wait.until(ExpectedConditions.stalenessOf(driver.findElement(firstSamsung)));
         clickToElement(firstSamsung);
-        logger.info("Проверяем что samsung добавлен в сравнение");
+        logger.info("Проверяем что Samsung добавлен в сравнение");
         Assert.assertTrue(driver.findElement(added).getText().contains("Samsung"));
-//		добавляем xiaomi в сравнение
+//		add xiaomi to comparison
         moveToElement(firstXiaomi);
         clickToElement(firstXiaomi);
         logger.info("Проверяем что Xiaomi добавлен в сравнение");
         Assert.assertTrue(driver.findElement(added).getText().contains("Xiaomi"));
-//		переход в сравнение
+//		jump to comparison
         executor.executeScript("arguments[0].click();", driver.findElement(compare));//обычный клик работает с ошибкой
-//		ожидание
+//		waiting
         logger.info("Проверяем что в сравнение 2 товара");
         Assert.assertEquals(3, driver.findElements(elementInList).size());
     }

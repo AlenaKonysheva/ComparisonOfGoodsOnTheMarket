@@ -11,13 +11,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pages.AboutMePage;
-import pages.OtusMainPage;
-import pages.PersonalAccountPage;
-import static org.openqa.selenium.remote.BrowserType.CHROME;
+
+import java.time.Duration;
+
+import static driverfactory.Browsers.CHROME;
 
 public class BaseTest {
-    protected final Logger logger = LogManager.getLogger(SampleTest.class);
+    protected final Logger logger = LogManager.getLogger(YandexMarketTest.class);
     protected final ServerConfig cfg = ConfigFactory.create(ServerConfig.class);
     protected WebDriver driver;
     protected Actions actions;
@@ -35,9 +35,9 @@ public class BaseTest {
         logger.info("Set up test");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
-        driver = WebDriverFactory.create(CHROME, options);
+        driver = WebDriverFactory.create(String.valueOf(CHROME),options);
         actions = new Actions(driver);
-        wait = new WebDriverWait(driver, EXPLICIT_WAIT_TIME_OUT_TIME);
+        wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT_TIME_OUT_TIME));
         executor = (JavascriptExecutor)driver;
     }
 
@@ -46,7 +46,7 @@ public class BaseTest {
         logger.info("Finish test");
         if (driver != null) {
             driver.quit();
-            logger.info("Драйвер успешно закрыт");
+            logger.info("Driver closed successfully");
         }
     }
 
@@ -60,8 +60,8 @@ public class BaseTest {
             logger.info(String.format("Кликаем %s",by));
             driver.findElement(by).click();
         } catch (Exception e) {
-            logger.info("Не удалось кликнуть по элементу");
-            logger.info("Пробуем закрыть вспылвающее окно, закрывающее элемент");
+            logger.info("Failed to click element");
+            logger.info("Trying to close the popup that closes the element");
             driver.findElement(accept).click();
             driver.findElement(by).click();
         }

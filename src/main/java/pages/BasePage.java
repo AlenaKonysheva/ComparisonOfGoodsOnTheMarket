@@ -13,6 +13,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
+import java.util.concurrent.TimeUnit;
+
 public class BasePage {
 	protected final Logger logger = LogManager.getLogger(BasePage.class);
 	protected final ServerConfig cfg = ConfigFactory.create(ServerConfig.class);
@@ -20,12 +23,9 @@ public class BasePage {
 	protected Actions actions;
 	protected WebDriverWait wait;
 	protected JavascriptExecutor executor;
-	protected final static int EXPLICIT_WAIT_TIME_OUT_TIME = 5;
+	private static final int EXPLICIT_WAIT_TIME_OUT_TIME = 5;
 	protected String url;
 
-	/**
-	 * Вебэлементы
-	 */
 	@FindBy(css = "button[data-modal-id=\"new-log-reg\"]")
 	private WebElement logRegButton;
 	//Вебэлементы
@@ -34,7 +34,7 @@ public class BasePage {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
 		actions = new Actions(driver);
-		wait = new WebDriverWait(driver, EXPLICIT_WAIT_TIME_OUT_TIME);
+		wait = new WebDriverWait(driver, Duration.ofSeconds(EXPLICIT_WAIT_TIME_OUT_TIME));
 		executor = (JavascriptExecutor) driver;
 	}
 

@@ -10,13 +10,13 @@ public class PersonalAccountPage extends BasePage{
 	}
 
 	/**
-	 * Вебэлементы
+	 *WebElements
 	 */
 	@FindBy(css = "[title=\"О себе\"]")
 	private WebElement aboutMeTitle;
 
 	/**
-	 * Методы
+	 * Methods
 	 */
 	public void gotoAboutMe() {
 		aboutMeTitle.click();

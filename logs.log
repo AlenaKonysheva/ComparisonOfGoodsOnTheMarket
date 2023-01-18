@@ -52,3 +52,11 @@
 2021-03-23 11:51:24,261 INFO SampleTest [main] Пробуем закрыть вспылвающее окно, закрывающее элемент
 2021-03-23 11:51:24,270 INFO SampleTest [main] Finish test
 2021-03-23 11:51:25,020 INFO SampleTest [main] Драйвер успешно закрыт
+2023-01-18 19:05:00,096 INFO SampleTest [main] Set up test
+2023-01-18 19:05:00,107 INFO d.WebDriverFactory [main] Return CHROME with options
+2023-01-18 19:05:04,591 INFO SampleTest [main] Start test
+2023-01-18 19:05:36,568 INFO SampleTest [main] Кликаем By.xpath: //span[contains(text(),"Электроника")]
+2023-01-18 19:05:41,590 INFO SampleTest [main] Не удалось кликнуть по элементу
+2023-01-18 19:05:41,590 INFO SampleTest [main] Пробуем закрыть вспылвающее окно, закрывающее элемент
+2023-01-18 19:05:46,653 INFO SampleTest [main] Finish test
+2023-01-18 19:05:46,852 INFO SampleTest [main] Драйвер успешно закрыт
